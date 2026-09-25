@@ -9,6 +9,17 @@ immediately gets the full drawing. Live collaborator cursors, a shared
 clear, and an undo that removes the last continuous stroke round it out. The
 plain HTML frontend in `public/` is served by the same server.
 
+## Live demo
+
+https://assignment-11-collaborative-whiteboard-r3bd.onrender.com
+
+Open it in two browser tabs (or on two devices) to draw together. The app runs
+as one Render web service on the free tier (which supports WebSockets): the
+first visit after a period of inactivity can take up to a minute, and board
+history lives in memory, so it is cleared whenever the server restarts.
+Deployed with root directory `Ashutosh_Pawar_150096725130`, build
+`npm install`, start `npm start`; Render provides `PORT`.
+
 ## Tech stack
 
 - Node.js, Express 5
